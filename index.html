@@ -1,77 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" href="logo.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify - Your favrourite music is here</title>
-    <link rel="StyleSheet" href="style.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li class="brand"><img src="logo.png" alt="Spotify">Spotify</li>
-            <li>Home</li>
-            <li>About</li>
-        </ul>
-    </nav>
 
-    <div class="container">
-        <div class="songList">
-            <h1>Best of NCS- No copyright sounds</h1>
-            <div class="songItemContainer">
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span>Let me love you</span>
-                    <span class="songlistplay"> <span class="timestamp">05:34 <i class="fa-solid fa-circle-play"></i></span></i></span>
-                </div>
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span>Let me love you</span>
-                    <span class="songlistplay"> <span class="timestamp">05:34 <i class="fa-solid fa-circle-play"></i></span></i></span>
-                </div>
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span>Let me love you</span>
-                    <span class="songlistplay"> <span class="timestamp">05:34 <i class="fa-solid fa-circle-play"></i></span></i></span>
-                </div>
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span>Let me love you</span>
-                    <span class="songlistplay"> <span class="timestamp">05:34 <i class="fa-solid fa-circle-play"></i></span></i></span>
-                </div>
-                <div class="songItem">
-                    <img src="covers/1.jpg" alt="1">
-                    <span>Let me love you</span>
-                    <span class="songlistplay"> <span class="timestamp">05:34 <i class="fa-solid fa-circle-play"></i></span></i></span>
-                </div>
-               
-                
+<nav>
+    <ul>
+        <li class="brand"><img src="logo.png"> Spotify</li>
+        <li>Home</li>
+        <li>About</li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="songList">
+        <h1>Best of NCS</h1>
+
+        <div class="songItemContainer">
+
+            <!-- SONG ITEMS -->
+            <div class="songItem">
+                <img src="covers/1.jpg">
+                <span class="songName">Song 1</span>
+                <span class="timestamp">05:34 
+                    <i id="0" class="fa-solid songItemPlay fa-circle-play"></i>
+                </span>
             </div>
-        </div>
-        
-        <div class="songbanner"></div>
 
+            <div class="songItem">
+                <img src="covers/2.jpg">
+                <span class="songName">Song 2</span>
+                <span class="timestamp">05:34 
+                    <i id="1" class="fa-solid songItemPlay fa-circle-play"></i>
+                </span>
+            </div>
+
+            <div class="songItem">
+                <img src="covers/3.jpg">
+                <span class="songName">Song 3</span>
+                <span class="timestamp">05:34 
+                    <i id="2" class="fa-solid songItemPlay fa-circle-play"></i>
+                </span>
+            </div>
+
+            <div class="songItem">
+                <img src="covers/4.jpg">
+                <span class="songName">Song 4</span>
+                <span class="timestamp">05:34 
+                    <i id="3" class="fa-solid songItemPlay fa-circle-play"></i>
+                </span>
+            </div>
+
+            <div class="songItem">
+                <img src="covers/5.jpg">
+                <span class="songName">Song 5</span>
+                <span class="timestamp">05:34 
+                    <i id="4" class="fa-solid songItemPlay fa-circle-play"></i>
+                </span>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="bottom">
+    <input type="range" id="myProgressBar" min="0" value="0" max="100">
+
+    <div class="icons">
+        <i class="fa-solid fa-backward" id="previous"></i>
+        <i class="fa-solid fa-circle-play" id="masterPlay"></i>
+        <i class="fa-solid fa-forward" id="next"></i>
     </div>
 
-    <div class="bottom">
-        <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
-        <div class="icons">
-            <!-- fontawesome icons -->
-             <i class="fa-solid fa-backward"></i>
-             <i class="fa-solid fa-circle-play" id="masterPlay"></i>
-             <i class="fa-solid fa-forward"></i>
-
-
-
-        </div>
-        <div class="songInfo">
-
-            <img src="playing.gif" width="42px" alt="" id="gif"> Let me love you - Justin Beiter
-        </div>
+    <div class="songInfo">
+        <img src="playing.gif" id="gif" width="40">
+        <span id="masterSongName">Devi maiya ke Mahima</span>
     </div>
-    <script src="script.js"></script>
-<script src="https://kit.fontawesome.com/a529cdfac2.js" crossorigin="anonymous"></script>
-    
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
